@@ -49,7 +49,7 @@ This Django application is an AI-powered grading system.  It uses the Google Gem
             }
         }
         ```
-        If your student management system uses SQLite, you'll need the correct path to the database file:
+       # If your student management system uses SQLite, you'll need the correct path to the database file:
         ```python
         DATABASES = {
             'default': {
