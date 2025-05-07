@@ -1,0 +1,26 @@
+<!-- student_portal/templates/student_portal/test_form.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Test</title>
+</head>
+<body>
+    <h2>Submit Your Answers</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.student_name.label_tag }} {{ form.student_name }}<br>
+        {{ form.roll_no.label_tag }} {{ form.roll_no }}<br><br>
+
+        <p><strong>{{ questions.0 }}</strong></p>
+        {{ form.answer_1 }}<br><br>
+
+        <p><strong>{{ questions.1 }}</strong></p>
+        {{ form.answer_2 }}<br><br>
+
+        <p><strong>{{ questions.2 }}</strong></p>
+        {{ form.answer_3 }}<br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
